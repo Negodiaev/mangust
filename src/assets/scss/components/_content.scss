@@ -1,0 +1,8 @@
+.advantages {
+  .item {
+    &:before,
+    &:after {
+      content: '\2022';
+    }
+  }
+}
