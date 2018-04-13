@@ -1,0 +1,16 @@
+a {
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  &:hover {
+    border-color: $anchor-color;
+  }
+}
+
+.button {
+  font-weight: $global-weight-bold;
+  .inner-text {
+    text-transform: uppercase;
+  }
+}

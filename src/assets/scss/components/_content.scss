@@ -1,8 +1,119 @@
 .advantages {
+  padding: rem-calc(30) 0 rem-calc(20);
+  font-size: 18px;
+  color: $dark-gray;
+  li {
+    margin-bottom: rem-calc(10);
+  }
   .item {
     &:before,
     &:after {
       content: '\2022';
+      font-weight: $global-weight-bold;
+    }
+    &:before {
+      margin-right: 10px;
+    }
+    &:after {
+      margin-left: 10px;
     }
   }
+}
+
+.navigation {
+  margin-bottom: rem-calc(30);
+  .menu {
+    font-size: rem-calc(20);
+  }
+}
+
+.section {
+  padding: rem-calc(30) 0 rem-calc(40);
+  .title {
+    margin-bottom: rem-calc(40);
+  }
+}
+
+.catalog-item {
+  padding: rem-calc(10) 0;
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  &:not(:first-child) {
+    margin-top: rem-calc(30);
+  }
+  &.container,
+  .cell,
+  .info {
+    display: flex;
+  }
+  &.container {
+    justify-content: space-between;
+  }
+  .cell {
+    flex: 1 1 40%;
+    align-content: stretch;
+    &:not(:first-child) {
+      padding-left: rem-calc(20);
+    }
+    &.photo-wrap {
+      flex: 0 0 20%;
+    }
+  }
+  .photo {
+    border: 0;
+    .inner {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/shield.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    img {
+      display: block;
+      max-width: rem-calc(240px);
+    }
+  }
+  .info,
+  .costs {
+    width: 100%;
+  }
+  .info {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .details {
+    .title {
+      margin-bottom: rem-calc(10);
+      color: $body-font-color;
+    }
+  }
+  .tags {
+    .label {
+      margin-top: rem-calc(4);
+    }
+  }
+  .costs {
+    a {
+      border: 0;
+    }
+    .button {
+      margin-bottom: 0;
+    }
+  }
+  .price {
+    color: $success-color;
+  }
+}
+
+.note {
+  font-size: rem-calc(15);
+  color: $dark-gray;
 }
