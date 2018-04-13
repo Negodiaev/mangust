@@ -5,7 +5,8 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "deploy": "gulp deploy --production"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
@@ -53,9 +54,7 @@
     "email": "foundation@zurb.com"
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "presets": ["es2015"]
   },
   "private": true
 }
