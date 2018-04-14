@@ -174,8 +174,8 @@ $anchor-color-hover: scale-color($anchor-color, $lightness: -10%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $medium-gray;
-$hr-margin: rem-calc(20) auto;
+$hr-border: 1px solid $light-gray;
+$hr-margin: rem-calc(10) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: none;
@@ -342,11 +342,11 @@ $card-margin-bottom: $global-margin;
 $closebutton-position: right top;
 $closebutton-offset-horizontal: (
   small: 0.66rem,
-  medium: rem-calc(-18)
+  medium: 0.66rem
 );
 $closebutton-offset-vertical: (
   small: 0.33em,
-  medium: rem-calc(-18)
+  medium: 0.33rem
 );
 $closebutton-size: (
   small: 1.5em,
@@ -726,9 +726,9 @@ $responsive-embed-ratios: (
 // ----------
 
 $reveal-background: $light-gray;
-$reveal-width: 600px;
+$reveal-width: 580px;
 $reveal-max-width: $global-width;
-$reveal-padding: rem-calc(40) rem-calc(100);
+$reveal-padding: rem-calc(40) rem-calc(90);
 $reveal-border: 1px solid $medium-gray;
 $reveal-radius: rem-calc(8);
 $reveal-zindex: 1005;

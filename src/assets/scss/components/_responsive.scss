@@ -1,0 +1,137 @@
+@include breakpoint(small only) {
+  html {
+    font-size: 15px;
+  }
+  .modal {
+    padding: rem-calc(40) rem-calc(10);
+  }
+}
+
+@include breakpoint(medium) {
+  .advantages {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(20);
+    .item {
+      &:before,
+      &:after {
+        content: '\2022';
+        font-weight: $global-weight-bold;
+      }
+      &:before {
+        margin-right: 10px;
+      }
+      &:after {
+        margin-left: 10px;
+      }
+    }
+  }
+  .section {
+    padding: rem-calc(30) 0 rem-calc(40);
+    .title {
+      margin-bottom: rem-calc(40);
+    }
+  }
+  .catalog-item {
+    margin-bottom: rem-calc(30);
+    padding: rem-calc(16) 0;
+    .details {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .how-to {
+    .to-right {
+      float: right;
+      margin-left: rem-calc(20);
+    }
+    img {
+      width: auto;
+    }
+  }
+  .modal {
+    overflow: visible;
+    .closer {
+      top: rem-calc(-18);
+      right: rem-calc(-18);
+      width: 2rem;
+      border-radius: 50%;
+      color: $white;
+      background-color: $success-color;
+      transition: background-color 0.15s ease;
+      &:hover {
+        color: $white;
+        background-color: scale-color($success-color, $lightness: -10%);
+      }
+    }
+  }
+}
+
+@include breakpoint(large) {
+  .header,
+  .footer {
+    background-image: url(../img/bg.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header {
+    padding-bottom: rem-calc(30);
+    .callback {
+      padding-top: rem-calc(14);
+    }
+  }
+  .logo {
+    a {
+      max-width: 100%;
+    }
+  }
+  .navigation {
+    margin-bottom: rem-calc(30);
+    .menu {
+      a {
+        border-width: 1px;
+      }
+    }
+  }
+  .catalog-item {
+    &.container,
+    .cell,
+    .info,
+    .costs {
+      display: flex;
+    }
+    .cell {
+      flex-grow: 1;
+      &:not(:last-child) {
+        margin-bottom: 0;
+        padding-right: rem-calc(20);
+      }
+      &.photo-wrap {
+        flex-grow: 0;
+      }
+    }
+    .photo {
+      img {
+        max-width: rem-calc(280px);
+      }
+    }
+    .info,
+    .costs {
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  .contact {
+    .button {
+      font-size: rem-calc(15);
+    }
+  }
+  .footer {
+    .logo {
+      a {
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+  }
+}

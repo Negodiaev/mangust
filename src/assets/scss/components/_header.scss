@@ -3,10 +3,6 @@
   position: relative;
   color: $white;
   background-color: $secondary-color;
-  background-image: url(../img/bg.jpg);
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
   &:before {
     content: '';
     position: absolute;
@@ -23,22 +19,33 @@
     position: relative;
   }
   .callback {
-    padding-top: 14px;
+    padding-top: rem-calc(8);
   }
 }
 
 .header {
-  padding: rem-calc(10) 0 rem-calc(30);
+  padding: 10px 0;
 }
 
 .callback,
 .logo {
   a {
-    border: 0;
+    border-width: 0;
+    outline: 0;
+  }
+}
+
+.logo {
+  a {
+    max-width: 85px;
   }
 }
 
 .callback {
+  svg {
+    width: 40px;
+    fill: $white;
+  }
   .mail {
     margin-bottom: rem-calc(20);
     font-weight: $global-weight-normal;

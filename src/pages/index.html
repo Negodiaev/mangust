@@ -1,1 +1,36 @@
-{{> header}} {{> main}} {{> footer}} {{> modal}}
+<div class="off-canvas-wrapper">
+  <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    <div class="mobile-content">
+      <div class="navigation">
+        <ul class="menu vertical text-center">
+          <li>
+            <a href="#">Аренда складов Пермь</a>
+          </li>
+          <li>
+            <a href="#">Аренда под производство Пермь</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navigation -->
+      <div class="callback">
+        <a href="tel:+73422590440" class="phone h3">+7&nbsp;(342)259-04-40</a>
+        <br>
+        <a href="mailto:arenda.mangust@yandex.ru" class="mail h4">arenda.mangust@yandex.ru</a>
+        <br>
+        <button type="button" class="success button expanded" data-toggle="modal">Заказать обратный звонок</button>
+        <div class="text">
+          <img src="assets/img/shield.png" class="icon"> Гарантия безопасности сделок
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      {{> header}} {{> main}} {{> footer}} {{> modal}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->

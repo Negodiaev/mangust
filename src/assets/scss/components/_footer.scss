@@ -5,6 +5,12 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  .logo {
+    a {
+      margin: rem-calc(16) 0 rem-calc(10);
+      max-width: 140px;
+    }
+  }
 }
 
 .copyright {
