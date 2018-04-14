@@ -179,7 +179,7 @@ $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: none;
-$list-style-position: outside;
+$list-style-position: inside;
 $list-side-margin: 0;
 $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
@@ -342,11 +342,11 @@ $card-margin-bottom: $global-margin;
 $closebutton-position: right top;
 $closebutton-offset-horizontal: (
   small: 0.66rem,
-  medium: 1rem
+  medium: rem-calc(-18)
 );
 $closebutton-offset-vertical: (
   small: 0.33em,
-  medium: 0.5rem
+  medium: rem-calc(-18)
 );
 $closebutton-size: (
   small: 1.5em,
@@ -430,7 +430,7 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $body-font-color;
+$input-placeholder-color: $dark-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
@@ -725,14 +725,14 @@ $responsive-embed-ratios: (
 // 47. Reveal
 // ----------
 
-$reveal-background: $white;
+$reveal-background: $light-gray;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
-$reveal-padding: $global-padding;
+$reveal-padding: rem-calc(40) rem-calc(100);
 $reveal-border: 1px solid $medium-gray;
-$reveal-radius: $global-radius;
+$reveal-radius: rem-calc(8);
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: rgba($black, 0.6);
 
 // 48. Slider
 // ----------

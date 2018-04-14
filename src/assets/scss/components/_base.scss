@@ -10,7 +10,8 @@ a {
 
 .button {
   font-weight: $global-weight-bold;
-  .inner-text {
-    text-transform: uppercase;
-  }
+}
+
+.text-up {
+  text-transform: uppercase;
 }

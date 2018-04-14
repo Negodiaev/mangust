@@ -8,5 +8,14 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
+import './vendor/masking-input';
 
 $(document).foundation();
+
+document.addEventListener('DOMContentLoaded', function(event) {
+  //------------------------------------------------------------------------//
+  // new InputMask({
+  //   // options
+  // });
+  //------------------------------------------------------------------------//
+});

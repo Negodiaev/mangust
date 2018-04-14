@@ -32,9 +32,9 @@
           <br>
           <a href="mailto:arenda.mangust@yandex.ru" class="mail h4">arenda.mangust@yandex.ru</a>
           <br>
-          <button type="button" class="success button large">Заказать обратный звонок</button>
+          <button type="button" class="success button large" data-toggle="modal">Заказать обратный звонок</button>
           <div class="text">
-            <img src="assets/img/shield.png" alt=""> Гарантия безопасности сделок
+            <img src="assets/img/shield.png" class="icon"> Гарантия безопасности сделок
           </div>
         </div>
       </div>
@@ -371,36 +371,31 @@
   <div class="how-to section">
     <div class="column row">
       <h2 class="title text-center">Как арендовать офис в Перми?</h2>
-      <div class="row">
-        <div class="large-6 columns">
-          <img src="assets/img/office.jpg" alt="">
-        </div>
-        <div class="large-6 columns">
-          <p>
-            <b>Чтобы арендовать офис</b> необходимо позвонить в нашу компанию по номеру +7 (342)259-04-40 или оставить заявку
-            на сайте. Приехать к нам, наш менеджер покажет Вам интересующий Вас офис. После чего можно заключать договор
-            аренды.
-            <b>Для договора аренды офиса необходимы документы:</b>
-          </p>
-          <b>Для юр. лиц</b>
-          <ol>
-            <li>Устав компании.</li>
-            <li>Свидетельство на ООО.</li>
-            <li>Свидетельство ОГРН.</li>
-          </ol>
-          <b>Для ИП</b>
-          <ol>
-            <li>Свидетельство на ИП.</li>
-            <li>Копия паспорта.</li>
-            <li>Свидетельство ИНН.</li>
-          </ol>
-          <b>Для физических лиц</b>
-          <ol>
-            <li>Копия паспорта.</li>
-            <li>Свидетельство ИНН.</li>
-            <li>Копия СНИЛС.</li>
-          </ol>
-        </div>
+      <div class="column row">
+        <img src="assets/img/office.jpg" class="to-right" alt="">
+        <p>
+          <b>Чтобы арендовать офис</b> необходимо позвонить в нашу компанию по номеру +7 (342)259-04-40 или оставить заявку
+          на сайте. Приехать к нам, наш менеджер покажет Вам интересующий Вас офис. После чего можно заключать договор аренды.
+          <b>Для договора аренды офиса необходимы документы:</b>
+        </p>
+        <b>Для юр. лиц</b>
+        <ol>
+          <li>Устав компании.</li>
+          <li>Свидетельство на ООО.</li>
+          <li>Свидетельство ОГРН.</li>
+        </ol>
+        <b>Для ИП</b>
+        <ol>
+          <li>Свидетельство на ИП.</li>
+          <li>Копия паспорта.</li>
+          <li>Свидетельство ИНН.</li>
+        </ol>
+        <b>Для физических лиц</b>
+        <ol>
+          <li>Копия паспорта.</li>
+          <li>Свидетельство ИНН.</li>
+          <li>Копия СНИЛС.</li>
+        </ol>
       </div>
       <!-- /.row -->
     </div>
@@ -427,9 +422,10 @@
         </div>
         <div class="medium-6 columns">
           <form>
-            <input type="text" placeholder="Введите номер телефона">
+            <input id="tel" type="tel" name="phone" placeholder="Введите номер телефона" pattern="\(\d{3}\) \d{3}\-\d{4}" class="masked"
+              title="phone number" maxlength="12" data-placeholder="(XXX) XXX-XXXX">
             <button type="button" class="success button expanded">Получить консультацию –
-              <span class="inner-text text-right">бесплатно</span>
+              <span class="text-up text-right">бесплатно</span>
             </button>
             <div class="notice text-center">
               <p>Ваши данные под защитой! Не будут переданы третьим лицам и использованы для спама.</p>
@@ -452,30 +448,50 @@
 </main>
 <!-- /.content --> <footer class="footer">
   <div class="inner-content">
-    <div class="row">
+    <div class="row" data-equalizer data-equalize-on="medium">
       <div class="medium-6 columns">
-        <div class="page-title title h1">Аренда офисов Пермь</div>
-        <div class="logo">
-          <a href="/">
-            <img src="assets/img/logo.png" alt="">
-          </a>
+        <div data-equalizer-watch>
+          <div class="page-title title h1">Аренда офисов Пермь</div>
+          <div class="logo">
+            <a href="/">
+              <img src="assets/img/logo.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
       <div class="medium-6 columns text-right">
-        <div class="callback">
-          <a href="tel:+73422590440" class="phone">+7&nbsp;(342)259-04-40</a>
-          <br>
-          <a href="mailto:arenda.mangust@yandex.ru" class="mail">arenda.mangust@yandex.ru</a>
+        <div class="callback" data-equalizer-watch>
+          <div>
+            <a href="tel:+73422590440" class="phone h3">+7&nbsp;(342)259-04-40</a>
+            <br>
+            <a href="mailto:arenda.mangust@yandex.ru" class="mail h4">arenda.mangust@yandex.ru</a>
+          </div>
+          <div class="copyright">&copy; Все права защищены ООО "Мангуст" 2018</div>
         </div>
-        <div class="copyright">&copy; Все права защищены ООО "Мангуст" 2018</div>
       </div>
+      <!-- /.row -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.inner-content -->
+    <!-- /.inner-content -->
 </footer>
-<!-- /.footer -->
-
+<!-- /.footer --> <div class="modal reveal text-center" id="modal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+  <h4 class="title">ЗАКАЗ ОБРАТНОГО ЗВОНКА</h4>
+  <h5 class="subtitle subheader">Заполните форму и ниже и мы перезвоним Вам - это
+    <span class="text-up">БЕСПЛАТНО</span>
+  </h5>
+  <form>
+    <input type="text" placeholder="Введите номер телефона">
+    <button type="button" class="success button expanded">Перезвоните мне</button>
+    <div class="notice text-center">
+      <p>Ваши данные под защитой! Не будут переданы третьим лицам и использованы для спама.</p>
+      <p>Отправляя заявку Вы автоматически соглашаетесь с
+        <a href="#">политикой конфиденциальности данных.</a>
+      </p>
+    </div>
+  </form>
+  <button class="closer close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
   <script src="assets/js/app.js"></script>
 </body>

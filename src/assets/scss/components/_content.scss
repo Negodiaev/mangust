@@ -117,3 +117,41 @@
   font-size: rem-calc(15);
   color: $dark-gray;
 }
+
+.how-to {
+  .to-right {
+    float: right;
+    margin: 0 0 rem-calc(20) rem-calc(20);
+  }
+}
+
+.notice {
+  font-size: rem-calc(14);
+  p {
+    max-width: rem-calc(420);
+    margin: 0 auto rem-calc(10);
+    line-height: 1.2;
+  }
+}
+
+.modal {
+  overflow: visible;
+  .title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  .subtitle {
+    margin-bottom: rem-calc(30);
+  }
+  .closer {
+    width: 2rem;
+    border-radius: 50%;
+    color: $white;
+    background-color: $success-color;
+    transition: background-color 0.15s ease;
+    &:hover {
+      color: $white;
+      background-color: scale-color($success-color, $lightness: -10%);
+    }
+  }
+}

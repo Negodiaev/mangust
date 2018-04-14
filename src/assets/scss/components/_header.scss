@@ -22,13 +22,13 @@
   .inner-content {
     position: relative;
   }
+  .callback {
+    padding-top: 14px;
+  }
 }
 
 .header {
   padding: rem-calc(10) 0 rem-calc(30);
-  .callback {
-    padding-top: 14px;
-  }
 }
 
 .callback,
@@ -42,5 +42,8 @@
   .mail {
     margin-bottom: rem-calc(20);
     font-weight: $global-weight-normal;
+  }
+  .icon {
+    margin-right: rem-calc(6);
   }
 }
