@@ -35,7 +35,7 @@ var inputMask = {
       this.opts.masked = document.querySelectorAll(this.opts.masked);
     }
 
-    for (var i = 0; i < this.opts.masked.length; i++) {
+    for (i = 0; i < this.opts.masked.length; i++) {
       t = this.opts.masked[i];
       parentClass = t.parentNode.getAttribute('class');
 
@@ -128,7 +128,7 @@ var inputMask = {
     // strip special characters
     strippedValue = isCharsetPresent ? value.replace(/\W/g, '') : value.replace(/\D/g, '');
 
-    for (var i = 0, j = 0; i < l; i++) {
+    for (i = 0, j = 0; i < l; i++) {
       isInt = !isNaN(parseInt(strippedValue[j]));
       isLetter = strippedValue[j] ? strippedValue[j].match(/[A-Z]/i) : false;
       matchesNumber = this.opts.mNum.indexOf(placeholder[i]) >= 0;
@@ -170,7 +170,7 @@ var inputMask = {
       return value;
     }
     // test the value, removing the last character, until what you have is a submatch
-    for (var i = l; i >= 0; i--) {
+    for (i = l; i >= 0; i--) {
       testValue = value + validExample.substr(value.length);
       if (pattern.test(testValue)) {
         return value;

@@ -27,13 +27,13 @@ a {
       .burger {
         i {
           &:first-child() {
-            transform: translateY(14px) rotate(45deg);
+            transform: translateY(10px) rotate(45deg);
           }
           &:nth-child(2) {
             opacity: 0;
           }
           &:nth-child(3) {
-            transform: translateY(-14px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg);
           }
         }
       }
@@ -52,16 +52,16 @@ a {
 
 .burger {
   position: relative;
-  margin-top: 8px;
-  width: 40px;
-  height: 40px;
+  margin-top: 7px;
+  width: 30px;
+  height: 28px;
   outline: none;
   i {
     display: inline-block;
     position: absolute;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     border-radius: 2px;
     opacity: 1;
     background-color: $white;
@@ -70,14 +70,14 @@ a {
       transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:first-child {
-      top: 4px;
+      top: 3px;
     }
     &:nth-child(2) {
-      top: 18px;
+      top: 13px;
       transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:nth-child(3) {
-      top: 32px;
+      top: 23px;
     }
   }
 }

@@ -54,12 +54,14 @@
           <i></i>
         </button>
       </div>
-      <div class="small-6 large-6 columns">
-        <h1 class="title show-for-large">Аренда офисов Пермь</h1>
-        <div class="logo text-center large-text-left">
-          <a href="/">
-            <img src="assets/img/logo.png" alt="">
-          </a>
+      <div class="small-6 large-8 columns">
+        <div class="logo-container">
+          <h1 class="page-title title show-for-large">Аренда офисов Пермь</h1>
+          <div class="logo text-center large-text-left">
+            <a href="/">
+              <img src="assets/img/logo.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
       <div class="small-3 columns hide-for-large text-right">
@@ -71,7 +73,7 @@
           </a>
         </div>
       </div>
-      <div class="show-for-large large-6 columns text-right">
+      <div class="show-for-large large-4 columns text-right">
         <div class="callback">
           <a href="tel:+73422590440" class="phone h3">+7&nbsp;(342)259-04-40</a>
           <br>
@@ -432,31 +434,36 @@
   <div class="how-to section">
     <div class="column row">
       <h2 class="title text-center">Как арендовать офис в Перми?</h2>
-      <div class="column row">
-        <img src="assets/img/office.jpg" class="to-right" alt="">
-        <p>
-          <b>Чтобы арендовать офис</b> необходимо позвонить в нашу компанию по номеру +7 (342)259-04-40 или оставить заявку
-          на сайте. Приехать к нам, наш менеджер покажет Вам интересующий Вас офис. После чего можно заключать договор аренды.
-          <b>Для договора аренды офиса необходимы документы:</b>
-        </p>
-        <b>Для юр. лиц</b>
-        <ol>
-          <li>Устав компании.</li>
-          <li>Свидетельство на ООО.</li>
-          <li>Свидетельство ОГРН.</li>
-        </ol>
-        <b>Для ИП</b>
-        <ol>
-          <li>Свидетельство на ИП.</li>
-          <li>Копия паспорта.</li>
-          <li>Свидетельство ИНН.</li>
-        </ol>
-        <b>Для физических лиц</b>
-        <ol>
-          <li>Копия паспорта.</li>
-          <li>Свидетельство ИНН.</li>
-          <li>Копия СНИЛС.</li>
-        </ol>
+      <div class="row">
+        <div class="medium-6 large-4 large-offset-1 columns text-right">
+          <img src="assets/img/office.jpg" alt="">
+        </div>
+        <div class="medium-6 large-6 columns end">
+          <p>
+            <b>Чтобы арендовать офис</b> необходимо позвонить в нашу компанию по номеру +7 (342)259-04-40 или оставить заявку
+            на сайте. Приехать к нам, наш менеджер покажет Вам интересующий Вас офис. После чего можно заключать договор
+            аренды.
+            <b>Для договора аренды офиса необходимы документы:</b>
+          </p>
+          <b>Для юр. лиц</b>
+          <ol>
+            <li>Устав компании.</li>
+            <li>Свидетельство на ООО.</li>
+            <li>Свидетельство ОГРН.</li>
+          </ol>
+          <b>Для ИП</b>
+          <ol>
+            <li>Свидетельство на ИП.</li>
+            <li>Копия паспорта.</li>
+            <li>Свидетельство ИНН.</li>
+          </ol>
+          <b>Для физических лиц</b>
+          <ol>
+            <li>Копия паспорта.</li>
+            <li>Свидетельство ИНН.</li>
+            <li>Копия СНИЛС.</li>
+          </ol>
+        </div>
       </div>
       <!-- /.row -->
     </div>
@@ -468,7 +475,7 @@
     <div class="column row">
       <h2 class="title text-center">Контакты для аренды офиса</h2>
       <div class="row">
-        <div class="medium-6 columns">
+        <div class="medium-6 large-5 large-offset-1 columns">
           <p>
             <b>Телефон:</b>
             <br>+7 (342)259-04-40
@@ -482,10 +489,10 @@
             <br>г. Пермь, ул. Дзержинского 59, 1-й подъезд, 4-й этаж, офис № А-401
           </p>
         </div>
-        <div class="medium-6 columns">
+        <div class="medium-6 large-5 columns end">
           <form>
-            <input id="tel" type="tel" name="phone" placeholder="Введите номер телефона" pattern="\(\d{3}\) \d{3}\-\d{4}" class="masked"
-              title="phone number" maxlength="12" data-placeholder="(XXX) XXX-XXXX">
+            <input id="tel-input" type="tel" name="tel-input" placeholder="Введите номер телефона" pattern="\(\d{3}\) \d{3}\-\d{4}" class="masked"
+              title="phone number" maxlength="17" data-placeholder="(XXX) XXX-XXXX">
             <button type="button" class="success button expanded">Получить консультацию –
               <span class="text-up text-right">бесплатно</span>
             </button>
@@ -503,25 +510,25 @@
     <!-- /.row -->
   </div>
   <!-- /.contact -->
-  <div class="map">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e5c889b930b774919d82c2058683319910cb9253899509264507b7d278f4a0a&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
-  </div>
+  <div id="map" class="map" width="100%" height="300"></div>
   <!-- /.map -->
 </main>
 <!-- /.content --> <footer class="footer">
   <div class="inner-content">
     <div class="row text-center large-text-left" data-equalizer data-equalize-on="medium">
-      <div class="large-6 columns">
+      <div class="large-8 columns">
         <div data-equalizer-watch>
-          <div class="page-title title h1">Аренда офисов Пермь</div>
-          <div class="logo">
-            <a href="/">
-              <img src="assets/img/logo.png" alt="">
-            </a>
+          <div class="logo-container">
+            <div class="page-title title h1">Аренда офисов Пермь</div>
+            <div class="logo">
+              <a href="/">
+                <img src="assets/img/logo.png" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="large-6 columns large-text-right">
+      <div class="large-4 columns large-text-right">
         <div class="callback" data-equalizer-watch>
           <div>
             <a href="tel:+73422590440" class="phone h3">+7&nbsp;(342)259-04-40</a>
@@ -561,6 +568,8 @@
 </div>
 <!-- /.off-canvas-wrapper -->
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  </script>
   <script src="assets/js/app.js"></script>
 </body>
 

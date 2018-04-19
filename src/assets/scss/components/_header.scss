@@ -19,7 +19,7 @@
     position: relative;
   }
   .callback {
-    padding-top: rem-calc(8);
+    padding-top: rem-calc(7);
   }
 }
 
@@ -37,13 +37,13 @@
 
 .logo {
   a {
-    max-width: 85px;
+    max-width: 60px;
   }
 }
 
 .callback {
   svg {
-    width: 40px;
+    width: 26px;
     fill: $white;
   }
   .mail {

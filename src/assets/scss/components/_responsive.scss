@@ -38,15 +38,6 @@
       margin-bottom: rem-calc(20);
     }
   }
-  .how-to {
-    .to-right {
-      float: right;
-      margin-left: rem-calc(20);
-    }
-    img {
-      width: auto;
-    }
-  }
   .modal {
     overflow: visible;
     .closer {
@@ -74,9 +65,26 @@
     background-size: cover;
   }
   .header {
-    padding-bottom: rem-calc(30);
+    padding-bottom: rem-calc(20);
+    .logo-container {
+      align-items: center;
+      padding-top: rem-calc(30);
+      .page-title {
+        padding-top: rem-calc(20);
+      }
+    }
     .callback {
-      padding-top: rem-calc(14);
+      padding-top: 0;
+    }
+  }
+  .logo-container {
+    display: flex;
+    .logo {
+      order: 1;
+      margin-right: rem-calc(40);
+    }
+    .page-title {
+      order: 2;
     }
   }
   .logo {
@@ -127,6 +135,12 @@
     }
   }
   .footer {
+    .logo-container {
+      padding-top: rem-calc(18);
+      .page-title {
+        padding-top: rem-calc(13);
+      }
+    }
     .logo {
       a {
         margin: 0;
