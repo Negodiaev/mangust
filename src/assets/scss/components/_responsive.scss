@@ -58,7 +58,7 @@
 
 @include breakpoint(large) {
   .header,
-  .footer {
+  .home-footer {
     background-image: url(../img/bg.jpg);
     background-position: 50% 100%;
     background-repeat: no-repeat;

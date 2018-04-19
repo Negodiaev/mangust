@@ -1,0 +1,140 @@
+<div class="off-canvas-wrapper">
+  <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    <div class="mobile-content">
+      <div class="navigation">
+        <ul class="menu vertical text-center">
+          <li>
+            <a href="#">Аренда складов Пермь</a>
+          </li>
+          <li>
+            <a href="#">Аренда под производство Пермь</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navigation -->
+      <div class="callback">
+        <a href="tel:+73422590440" class="phone h3">+7&nbsp;(342)259-04-40</a>
+        <br>
+        <a href="mailto:arenda.mangust@yandex.ru" class="mail h4">arenda.mangust@yandex.ru</a>
+        <br>
+        <button type="button" class="success button expanded" data-toggle="modal">Заказать обратный звонок</button>
+        <div class="text">
+          <img src="assets/img/shield.png" class="icon"> Гарантия безопасности сделок
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      {{> header}}
+      <main class="content page">
+        {{> breadcrumbs}}
+        <div class="product">
+          <div class="columns row">
+            <div class="product-info">
+              <div class="row">
+                <div class="medium-6 columns">
+                  <h4 class="product-info-title">Офис 28 м2 / 4-й этаж</h4>
+                  г. Пермь ул. Дзержинского 59
+                </div>
+                <div class="medium-6 columns medium-text-right">
+                  <h4 class="product-info-title">11 760 руб/мес с НДС</h4>
+                  <ul>
+                    <li>Без залога</li>
+                    <li>Коммунальные включены в стоимость</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <ul class="product-contact">
+              <li class="product-contact-phone">
+                <a href="tel:+73422590440">+7 (342)259-04-40</a>
+              </li>
+              <li class="product-contact-mail">
+                <a href="mailto:arenda.mangust@yandex.ru">arenda.mangust@yandex.ru</a>
+              </li>
+            </ul>
+            <div class="product-gallery">
+              <div class="row small-up-2 medium-up-4 large-up-6">
+                <div class="column column-block">
+                  <img src="assets/img/product/1-1.jpg" class="thumbnail" alt="">
+                </div>
+                <div class="column column-block">
+                  <img src="assets/img/product/1-2.jpg" class="thumbnail" alt="">
+                </div>
+                <div class="column column-block">
+                  <img src="assets/img/product/1-3.jpg" class="thumbnail" alt="">
+                </div>
+                <div class="column column-block">
+                  <img src="assets/img/product/1-4.jpg" class="thumbnail" alt="">
+                </div>
+                <div class="column column-block">
+                  <img src="assets/img/product/1-5.jpg" class="thumbnail" alt="">
+                </div>
+                <div class="column column-block">
+                  <img src="assets/img/product/1-6.jpg" class="thumbnail" alt="">
+                </div>
+                <div class="column column-block">
+                  <img src="assets/img/product/1-7.jpg" class="thumbnail" alt="">
+                </div>
+                <div class="column column-block">
+                  <img src="assets/img/product/1-8.jpg" class="thumbnail" alt="">
+                </div>
+                <div class="column column-block">
+                  <img src="assets/img/product/1-9.jpg" class="thumbnail" alt="">
+                </div>
+              </div>
+            </div>
+            <p>Офис в аренду общей площадью 28 кв.м. Состоит из 1-й комнаты. Находится на 4-м этаже. Доступ в офис 24 часа 7
+              дней в неделю. Столовая в этом же здании. Интернет и телефония 4 провайдера. Видеонаблюдение. Без мебели.</p>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.product -->
+        <div class="row">
+          <div class="large-5 large-push-7 columns">
+            <div class="contact">
+              <h4 class="title text-center">Записаться на бесплатный просмотр офиса</h4>
+              <form>
+                <input id="tel-input" type="tel" name="tel-input" placeholder="Введите номер телефона" pattern="\(\d{3}\) \d{3}\-\d{4}" class="masked"
+                  title="phone number" maxlength="17" data-placeholder="(XXX) XXX-XXXX">
+                <button type="button" class="success button expanded">Записаться на просмотр –
+                  <span class="text-up text-right">бесплатно</span>
+                </button>
+                <div class="notice text-center">
+                  <p>Ваши данные под защитой! Не будут переданы третьим лицам и использованы для спама.</p>
+                  <p>Отправляя заявку Вы автоматически соглашаетесь с
+                    <a href="#">политикой конфиденциальности данных.</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+            <!-- /.contact -->
+          </div>
+          <div class="large-7 large-pull-5 columns">
+            <div id="map" class="map" width="100%" height="400"></div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </main>
+      <!-- /.content -->
+      <div class="page-footer footer">
+        <div class="inner-content">
+          <div class="column row text-center">
+            <div class="copyright">
+              &copy; Все права защищены ООО "Мангуст" 2018
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.inner-content -->
+      </div>
+      <!-- /.footer -->
+      {{> modal}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->
