@@ -148,4 +148,13 @@
       }
     }
   }
+  .page {
+    .map-container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .map {
+      margin-bottom: rem-calc(30);
+    }
+  }
 }

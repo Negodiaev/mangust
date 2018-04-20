@@ -8,6 +8,8 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
+import './vendor/wa-mediabox';
+
 $(document).foundation();
 
 document.addEventListener('DOMContentLoaded', function(event) {
@@ -38,5 +40,21 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     myMap.geoObjects.add(myPlacemark);
   }
+  //------------------------------------------------------------------------//
+  // lightbox
+
+  //Translate - set before any binding
+  WAMediaBox.lang = {
+    prev: 'Назад',
+    next: 'Вперёд',
+    close: 'Закрыть',
+    openInNew: 'Открыть в новом окне'
+  };
+
+  //Bind single element manually
+  // WAMediaBox.bind(document.querySelector('.my-element'));
+
+  //Bind all child elements
+  WAMediaBox.bindAll(document.querySelector('.product-gallery'));
   //------------------------------------------------------------------------//
 });

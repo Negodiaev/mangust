@@ -34,13 +34,13 @@ a {
       .burger {
         i {
           &:first-child() {
-            transform: translateY(10px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
           }
           &:nth-child(2) {
             opacity: 0;
           }
           &:nth-child(3) {
-            transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
           }
         }
       }
@@ -59,9 +59,9 @@ a {
 
 .burger {
   position: relative;
-  margin-top: 7px;
-  width: 30px;
-  height: 28px;
+  margin-top: rem-calc(8);
+  width: 28px;
+  height: 26px;
   outline: none;
   i {
     display: inline-block;
@@ -74,17 +74,17 @@ a {
     background-color: $white;
     &:first-child,
     &:nth-child(3) {
-      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:first-child {
-      top: 3px;
+      top: 2px;
     }
     &:nth-child(2) {
-      top: 13px;
-      transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      top: 11px;
+      transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:nth-child(3) {
-      top: 23px;
+      top: 20px;
     }
   }
 }
